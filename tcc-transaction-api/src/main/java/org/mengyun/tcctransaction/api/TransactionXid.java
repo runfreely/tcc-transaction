@@ -127,6 +127,12 @@ public class TransactionXid implements Xid, Serializable {
         long secondLong = bb.getLong();
         return new UUID(firstLong, secondLong);
     }
+
+    public static void main(String[] args) {
+        for(int i=0;i<10;i++) {
+            System.out.println(UUID.randomUUID());
+        }
+    }
 }
 
 
